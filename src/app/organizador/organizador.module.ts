@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrganizadorComponent } from './organizador.component';
+import { OrganizadorListComponent } from './organizador-list/organizador-list.component';
+
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [OrganizadorComponent]
+  exports: [OrganizadorListComponent],
+  declarations: [OrganizadorListComponent]
 })
 export class OrganizadorModule { }
