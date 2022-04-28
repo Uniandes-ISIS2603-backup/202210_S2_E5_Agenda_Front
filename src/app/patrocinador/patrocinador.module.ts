@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PatrocinadorComponent } from './patrocinador.component';
+import { PatrocinadorListComponent } from './patrocinador-list/patrocinador-list.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [PatrocinadorComponent]
+  exports: [PatrocinadorListComponent],
+  declarations: [PatrocinadorListComponent]
 })
 export class PatrocinadorModule { }
