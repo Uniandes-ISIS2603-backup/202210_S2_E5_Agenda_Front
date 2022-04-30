@@ -1,3 +1,6 @@
+import { Escenario } from "../escenario/escenario";
+import { Responsable } from "../responsable/responsable";
+
 export class Evento{
 	id: number;
 	nombre: string;
@@ -7,8 +10,8 @@ export class Evento{
 	fechaDeFin: any;
 	detalles: string;
 	capacidadMax: number;
-	//responsable: Responsable;
-	//escenario: Escenario;
+	responsable: Responsable;
+	escenario: Escenario;
 
   constructor(
     id: number,
@@ -18,7 +21,9 @@ export class Evento{
     fechaDeInicio: any,
     fechaDeFin: any,
     detalles: string,
-    capacidadMax: number
+    capacidadMax: number,
+    responsable: Responsable,
+    escenario: Escenario
   )
   {
     this.id = id;
@@ -29,5 +34,7 @@ export class Evento{
     this.fechaDeFin = fechaDeFin;
     this.detalles = detalles;
     this.capacidadMax = capacidadMax;
+    this.responsable = responsable;
+    this.escenario = escenario;
   }
 }

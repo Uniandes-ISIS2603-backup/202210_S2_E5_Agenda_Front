@@ -9,7 +9,7 @@ import { EventoModule } from './evento/evento.module';
 @NgModule({
   declarations: [
     AppComponent
-  ],
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
