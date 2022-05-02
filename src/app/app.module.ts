@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { EventoModule } from './evento/evento.module';
+import { PatrocinadorModule } from './patrocinador/patrocinador.module';
+import { OrganizadorModule } from './organizador/organizador.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { EventoModule } from './evento/evento.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    EventoModule
+    EventoModule,
+    PatrocinadorModule,
+    OrganizadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

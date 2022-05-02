@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PatrocinadorService } from '../patrocinador.service';
+import { PatrocinadorDetail } from '../patrocinador-detail';
 
 @Component({
   selector: 'app-patrocinador-list',
