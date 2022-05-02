@@ -11,7 +11,7 @@ import { OrganizadorModule } from './organizador/organizador.module';
 @NgModule({
   declarations: [
     AppComponent
-  ],
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
