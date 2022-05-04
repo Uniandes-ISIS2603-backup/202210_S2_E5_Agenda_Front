@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ResponsableListComponent } from './responsable-list/responsable-list/responsable-list.component';
+import { ResponsableListComponent } from './responsable-list/responsable-list.component';
 
 
 @NgModule({

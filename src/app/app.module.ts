@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EventoModule } from './evento/evento.module';
 import { PatrocinadorModule } from './patrocinador/patrocinador.module';
 import { OrganizadorModule } from './organizador/organizador.module';
+import { ResponsableModule } from './responsable/responsable.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { OrganizadorModule } from './organizador/organizador.module';
     AppRoutingModule,
     EventoModule,
     PatrocinadorModule,
-    OrganizadorModule
+    OrganizadorModule,
+    ResponsableModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
