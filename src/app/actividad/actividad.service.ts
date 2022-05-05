@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Responsable } from './responsable';
+import { Actividad } from './actividad';
 import { environment } from 'src/environments/environment';
-
-
 
 @Injectable({
   providedIn: 'root'
 })
+export class ActividadService {
 
-export class ResponsableService {
 
+URL ="";
 constructor(private http: HttpClient) { }
-getResponsables(): Observable<Responsable[]>{
-  return this.http.get<Responsable[]>('http://localhost:8080/responsables');
-}
+  getActividades():Observable<Actividad[]>{
 
+    return this.http.get<Actividad[]>(this.URL);
+  }
 
 }

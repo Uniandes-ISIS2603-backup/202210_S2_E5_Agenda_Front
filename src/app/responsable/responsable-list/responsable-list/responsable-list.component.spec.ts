@@ -2,10 +2,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { faker } from '@faker-js/faker';
+
 import { ResponsableListComponent } from './responsable-list.component';
-
-
 
 describe('ResponsableListComponent', () => {
   let component: ResponsableListComponent;

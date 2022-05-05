@@ -13,6 +13,6 @@ export class PatrocinadorService {
 constructor( private http: HttpClient) { }
 
   getPatrocinadores(): Observable<Patrocinador[]> {
-    return this.http.get<Patrocinador[]>("http://localhost:8080/patrocinadores");
+    return this.http.get<Patrocinador[]>("http://localhost:8080/api/patrocinadores");
   }
 }

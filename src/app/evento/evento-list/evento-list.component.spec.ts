@@ -2,24 +2,24 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { faker } from '@faker-js/faker';
-import { ResponsableListComponent } from './responsable-list.component';
 
+import { EventoListComponent } from './evento-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
-
-describe('ResponsableListComponent', () => {
-  let component: ResponsableListComponent;
-  let fixture: ComponentFixture<ResponsableListComponent>;
+describe('EventoListComponent', () => {
+  let component: EventoListComponent;
+  let fixture: ComponentFixture<EventoListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResponsableListComponent ]
+      imports:[HttpClientModule],
+      declarations: [ EventoListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResponsableListComponent);
+    fixture = TestBed.createComponent(EventoListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
