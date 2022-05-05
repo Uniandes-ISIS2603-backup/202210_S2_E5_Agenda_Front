@@ -1,19 +1,108 @@
 <testExecutions version="1">
+  <file path="src/app/multimedia/multimedia.service.spec.ts">
+    <testCase name="Service: Multimedia should ..." duration="18">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[MultimediaService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'MultimediaService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[MultimediaService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.MultimediaService_Factory [as factory] (ng:///MultimediaService/ɵfac.js:4:45)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/actividad/actividad-list/actividad-list.component.spec.ts">
+    <testCase name="ActividadListComponent should create" duration="30"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="51"/>
+    <testCase name="AppComponent should create the app" duration="11"/>
   </file>
-  <file path="src/app/evento/evento.service.spec.ts">
-    <testCase name="Service: Evento should ..." duration="4"/>
+  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
+    <testCase name="ResponsableListComponent should create" duration="9"/>
   </file>
-  <file path="src/app/multimedia/multimedia-list/multimedia-list.component.spec.ts">
-    <testCase name="MultimediaListComponent should create" duration="14"/>
+  <file path="src/app/escenario/escenario.service.spec.ts">
+    <testCase name="Service: Escenario should ..." duration="6">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[EscenarioService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'EscenarioService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[EscenarioService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.EscenarioService_Factory [as factory] (ng:///EscenarioService/ɵfac.js:4:44)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/responsable/responsable.service.spec.ts">
+    <testCase name="Service: Responsable should ..." duration="5">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ResponsableService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ResponsableService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ResponsableService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.ResponsableService_Factory [as factory] (ng:///ResponsableService/ɵfac.js:4:46)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/actividad/actividad.service.spec.ts">
+    <testCase name="Service: Actividad should ..." duration="5">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActividadService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.ActividadService_Factory [as factory] (ng:///ActividadService/ɵfac.js:4:44)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
+    <testCase name="ResponsableListComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/invitado/invitado-list/invitado-list.component.spec.ts">
+    <testCase name="InvitadoListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/escenario/escenario-list/escenario-list.component.spec.ts">
+    <testCase name="EscenarioListComponent should create" duration="5"/>
   </file>
   <file path="src/app/organizador/organizador-list/organizador-list.component.spec.ts">
-    <testCase name="OrganizadorListComponent should create" duration="61">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
+    <testCase name="OrganizadorListComponent should create" duration="29">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'OrganizadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
+NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
@@ -34,32 +123,18 @@ Error: Expected undefined to be truthy.
 </failure>
     </testCase>
   </file>
-  <file path="src/app/organizador/organizador.service.spec.ts">
-    <testCase name="Service: Organizador should ..." duration="4">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'OrganizadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
-    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
-    at Object.OrganizadorService_Factory [as factory] (ng:///OrganizadorService/ɵfac.js:4:46)
-    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
-    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
-    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
-</failure>
-    </testCase>
+  <file path="src/app/multimedia/multimedia-list/multimedia-list.component.spec.ts">
+    <testCase name="MultimediaListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/evento/evento.service.spec.ts">
+    <testCase name="Service: Evento should ..." duration="2"/>
   </file>
   <file path="src/app/patrocinador/patrocinador-list/patrocinador-list.component.spec.ts">
-    <testCase name="PatrocinadorListComponent should create" duration="10">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
+    <testCase name="PatrocinadorListComponent should create" duration="8">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PatrocinadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
+NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
@@ -80,19 +155,19 @@ Error: Expected undefined to be truthy.
 </failure>
     </testCase>
   </file>
-  <file path="src/app/patrocinador/patrocinador.service.spec.ts">
-    <testCase name="Service: Patrocinador should ..." duration="6">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
+  <file path="src/app/invitado/invitado.service.spec.ts">
+    <testCase name="Service: Invitado should ..." duration="8">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[InvitadoService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PatrocinadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'InvitadoService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[InvitadoService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
     at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
     at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
-    at Object.PatrocinadorService_Factory [as factory] (ng:///PatrocinadorService/ɵfac.js:4:47)
+    at Object.InvitadoService_Factory [as factory] (ng:///InvitadoService/ɵfac.js:4:43)
     at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
     at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
@@ -100,10 +175,10 @@ NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; 
 </failure>
     </testCase>
   </file>
-  <file path="src/app/responsable/responsable-list/responsable-list/responsable-list.component.spec.ts">
-    <testCase name="ResponsableListComponent should create" duration="13"/>
+  <file path="src/app/organizador/organizador.service.spec.ts">
+    <testCase name="Service: Organizador should ..." duration="3"/>
   </file>
-  <file path="src/app/escenario/escenario-list/escenario-list.component.spec.ts">
-    <testCase name="EscenarioListComponent should create" duration="6"/>
+  <file path="src/app/patrocinador/patrocinador.service.spec.ts">
+    <testCase name="Service: Patrocinador should ..." duration="2"/>
   </file>
 </testExecutions>
