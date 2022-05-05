@@ -5,6 +5,7 @@ import { DebugElement } from '@angular/core';
 import { faker } from '@faker-js/faker';
 import { PatrocinadorListComponent } from './patrocinador-list.component';
 import { Patrocinador } from '../patrocinador';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('PatrocinadorListComponent', () => {
   let component: PatrocinadorListComponent;
@@ -13,6 +14,7 @@ describe('PatrocinadorListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ PatrocinadorListComponent ]
     })
     .compileComponents();

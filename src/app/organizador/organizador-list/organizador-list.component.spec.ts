@@ -5,6 +5,7 @@ import { DebugElement } from '@angular/core';
 import { faker } from '@faker-js/faker';
 import { OrganizadorListComponent } from './organizador-list.component';
 import { Organizador } from '../organizador';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('OrganizadorListComponent', () => {
   let component: OrganizadorListComponent;
@@ -13,6 +14,7 @@ describe('OrganizadorListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[HttpClientModule],
       declarations: [ OrganizadorListComponent ]
     })
     .compileComponents();
