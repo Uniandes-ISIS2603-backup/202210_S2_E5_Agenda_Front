@@ -10,10 +10,10 @@
   </file>
   <file path="src/app/organizador/organizador-list/organizador-list.component.spec.ts">
     <testCase name="OrganizadorListComponent should create" duration="61">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'OrganizadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
+NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
@@ -36,10 +36,10 @@ Error: Expected undefined to be truthy.
   </file>
   <file path="src/app/organizador/organizador.service.spec.ts">
     <testCase name="Service: Organizador should ..." duration="4">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'OrganizadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]: 
+NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
@@ -56,10 +56,10 @@ NullInjectorError: R3InjectorError(DynamicTestModule)[OrganizadorService -&gt; H
   </file>
   <file path="src/app/patrocinador/patrocinador-list/patrocinador-list.component.spec.ts">
     <testCase name="PatrocinadorListComponent should create" duration="10">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PatrocinadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
+NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
@@ -82,10 +82,10 @@ Error: Expected undefined to be truthy.
   </file>
   <file path="src/app/patrocinador/patrocinador.service.spec.ts">
     <testCase name="Service: Patrocinador should ..." duration="6">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PatrocinadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]: 
+NullInjectorError: R3InjectorError(DynamicTestModule)[PatrocinadorService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
