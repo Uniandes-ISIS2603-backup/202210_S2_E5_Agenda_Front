@@ -9,10 +9,11 @@ import { environment } from 'src/environments/environment';
 })
 export class EscenarioService {
 
+  private apiUrl: string = environment.baseUrl + 'multimedias';
 
-constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
-  getEscenarios(): Observable<Escenario[]> {
-    return this.http.get<Escenario[]>("http://localhost:8080/escenarios");
-  }
+    getEscenarios(): Observable<Escenario[]> {
+      return this.http.get<Escenario[]>(this.apiUrl);
+    }
 }

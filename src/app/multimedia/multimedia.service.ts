@@ -9,10 +9,11 @@ import { environment } from 'src/environments/environment';
 })
 export class MultimediaService {
 
+  private apiUrl: string = environment.baseUrl + 'multimedias';
 
-constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
-  getMultimedias(): Observable<Multimedia[]> {
-    return this.http.get<Multimedia[]>("http://localhost:8080/multimedias");
+    getMultimedias(): Observable<Multimedia[]> {
+      return this.http.get<Multimedia[]>(this.apiUrl);
+    }
   }
-}

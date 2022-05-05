@@ -15,7 +15,7 @@ export class Escenario {
 }
 
 export enum TipoEscenario {
-  'AULA',
-  'AUDITORIO',
-  'PLAZOLETA'
+  AULA = 'AULA',
+  AUDITORIO = 'AUDITORIO',
+  PLAZOLETA = 'PLAZOLETA'
 }
