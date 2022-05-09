@@ -49,10 +49,10 @@
   </file>
   <file path="src/app/actividad/actividad.service.spec.ts">
     <testCase name="Service: Actividad should ..." duration="10">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]: 
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActividadService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]: 
+NullInjectorError: R3InjectorError(DynamicTestModule)[ActividadService -&gt; HttpClient -&gt; HttpClient]:
   NullInjectorError: No provider for HttpClient!
     at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
     at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
