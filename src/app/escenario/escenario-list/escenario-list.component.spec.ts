@@ -15,6 +15,8 @@ describe('EscenarioListComponent', () => {
   let debug:  DebugElement
 
   let AULA: TipoEscenario
+  let AUDITORIO: TipoEscenario;  // Auditorio de tipo escenario
+  let PLAZOLETA: TipoEscenario;  // Plazoleta de tipo escenario
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({

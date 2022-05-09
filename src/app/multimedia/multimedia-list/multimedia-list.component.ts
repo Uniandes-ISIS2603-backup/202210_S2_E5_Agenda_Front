@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Multimedia } from '../multimedia';
+import { MultimediaService } from '../multimedia.service';
 
 @Component({
   selector: 'app-multimedia-list',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MultimediaListComponent implements OnInit {
 
-  constructor() { }
+  multimedias: Array<Multimedia> = [];
 
+
+  constructor(private multimediaService: MultimediaService) { }
+
+  getMultimedias(): void {
+    this.multimediaService.getMultimedias().subscribe(multimedias => {  this.multimedias = multimedias; });
+  }
   ngOnInit() {
+
+    this.getMultimedias();
+
   }
 
 }
