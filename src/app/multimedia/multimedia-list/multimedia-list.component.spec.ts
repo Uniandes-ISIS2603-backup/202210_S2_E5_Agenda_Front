@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MultimediaListComponent } from './multimedia-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('MultimediaListComponent', () => {
   let component: MultimediaListComponent;
@@ -11,6 +12,7 @@ describe('MultimediaListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[HttpClientModule],
       declarations: [ MultimediaListComponent ]
     })
     .compileComponents();

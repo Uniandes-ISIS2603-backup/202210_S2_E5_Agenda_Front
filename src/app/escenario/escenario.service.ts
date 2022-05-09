@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class EscenarioService {
 
-  private apiUrl: string = environment.baseUrl + 'multimedias';
+  private apiUrl: string = environment.baseUrl + 'escenarios';
 
   constructor( private http: HttpClient) { }
 
