@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Responsable } from '../responsable';
+import { ResponsableService } from '../responsable.service';
 
 @Component({
   selector: 'app-responsable-list',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./responsable-list.component.css']
 })
 export class ResponsableListComponent implements OnInit {
+  responsables: Array<Responsable> =[];
 
-  constructor() { }
+  constructor(private responsableService: ResponsableService) { }
+  getResponsables(): void {
+    this.responsableService.getResponsables().subscribe(responsables => {
+      this.responsables = responsables;
+    });
+    }
 
   ngOnInit() {
+    this.getResponsables();
   }
 
 }
