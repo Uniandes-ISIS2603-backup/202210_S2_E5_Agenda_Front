@@ -30,6 +30,7 @@ describe('ResponsableListComponent', () => {
         faker.datatype.number(),
         faker.lorem.sentence(),
         faker.lorem.sentence(),
+        faker.lorem.sentence(),
         faker.lorem.sentence()
       )
      ];
