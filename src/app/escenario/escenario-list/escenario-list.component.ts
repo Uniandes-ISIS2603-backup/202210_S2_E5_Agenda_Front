@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Escenario } from '../escenario';
+import { EscenarioService } from '../escenario.service';
+
 
 @Component({
   selector: 'app-escenario-list',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EscenarioListComponent implements OnInit {
 
-  constructor() { }
+  escenarios: Array<Escenario> = [];
 
+
+  constructor(private escenarioService: EscenarioService) { }
+
+  getEscenarios(): void {
+    this.escenarioService.getEscenarios().subscribe(escenarios => {  this.escenarios = escenarios; });
+  }
   ngOnInit() {
+
+    this.getEscenarios();
+
   }
 
 }
