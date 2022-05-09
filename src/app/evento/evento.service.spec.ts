@@ -10,7 +10,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { Escenario } from '../escenario/escenario';
+import { Escenario, TipoEscenario } from '../escenario/escenario';
 import { Responsable } from '../responsable/responsable';
 import { Evento } from './evento';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
@@ -20,6 +20,9 @@ describe('Service: Evento', () => {
   let component: EventoListComponent;
   let fixture: ComponentFixture<EventoListComponent>;
   let debug: DebugElement;
+  let AULA: TipoEscenario;  // Aula de tipo escenario
+  let AUDITORIO: TipoEscenario;  // Auditorio de tipo escenario
+  let PLAZOLETA: TipoEscenario;  // Plazoleta de tipo escenario
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -36,7 +39,7 @@ describe('Service: Evento', () => {
     let escenario = new Escenario(
       faker.datatype.number(),
       faker.name.jobArea(),
-      faker.datatype.number({min:0,max:3}),
+      AUDITORIO,
       faker.datatype.number({max:100000})
     );
 
