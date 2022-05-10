@@ -6,6 +6,7 @@ import { faker } from '@faker-js/faker';
 import { PatrocinadorListComponent } from './patrocinador-list.component';
 import { Patrocinador } from '../patrocinador';
 import { HttpClientModule } from '@angular/common/http';
+import { PatrocinadorDetail } from '../patrocinador-detail';
 
 describe('PatrocinadorListComponent', () => {
   let component: PatrocinadorListComponent;
@@ -23,11 +24,12 @@ describe('PatrocinadorListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PatrocinadorListComponent);
     component = fixture.componentInstance;
-    component.patrocinadores= [new Patrocinador(
+    component.patrocinadores= [new PatrocinadorDetail(
       faker.datatype.number(),
       faker.lorem.sentence(),
       faker.lorem.sentence(),
-      faker.lorem.sentence()
+      faker.lorem.sentence(),
+      []
     ),
     ];
 

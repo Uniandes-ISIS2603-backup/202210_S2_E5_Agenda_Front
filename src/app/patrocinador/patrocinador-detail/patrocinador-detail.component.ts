@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Patrocinador } from '../patrocinador';
 
 @Component({
   selector: 'app-patrocinador-detail',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatrocinadorDetailComponent implements OnInit {
 
+  @Input() patrocinadorDetail! : Patrocinador;
+  selectedPatrocinador!: Patrocinador
+  selected= false;
   constructor() { }
 
   ngOnInit() {
+
+  }
+  onSelected(patrocinador: Patrocinador){
+    this.selected=true;
+    this.selectedPatrocinador= patrocinador;
   }
 
 }

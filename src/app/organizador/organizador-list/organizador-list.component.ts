@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Evento } from 'src/app/evento/evento';
 import { Organizador } from '../organizador';
 import { OrganizadorService } from '../organizador.service';
 
@@ -9,6 +10,7 @@ import { OrganizadorService } from '../organizador.service';
 })
 export class OrganizadorListComponent implements OnInit {
   organizadores: Array<Organizador> =[];
+  eventos: Array<Evento>= [];
 
   constructor(private organizadorService: OrganizadorService) {}
   getOrganizadores(): void {
