@@ -1,3 +1,19 @@
-<p>
-  patrocinador-list works!
-</p>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let patrocinador of patrocinadores">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+              <img
+                class="card-img-top"
+                src="{{patrocinador.logoCompania}}"
+                alt="{{ patrocinador.nombre}}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ patrocinador.nombre }}</h5>
+                  <p class="card-text">{{ patrocinador.enlaceWeb}}</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
