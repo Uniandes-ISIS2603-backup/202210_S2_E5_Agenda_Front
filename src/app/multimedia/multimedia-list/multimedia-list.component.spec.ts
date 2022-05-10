@@ -58,6 +58,7 @@ describe('MultimediaListComponent', () => {
       faker.date.recent,
       faker.lorem.sentence(),
       faker.datatype.number({max: 100000}),
+      faker.image.imageUrl(),
       responsable,
       escenario
     );

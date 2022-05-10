@@ -23,6 +23,7 @@ export class EventoDetail extends Evento{
     fechaDeFin: any,
     detalles: string,
     capacidadMax: number,
+    imagen: string,
     responsable: Responsable,
     escenario: Escenario,
     organizadores: Array<Organizador>,
@@ -31,7 +32,7 @@ export class EventoDetail extends Evento{
     actividades: Array<Actividad>,
 	  invitados: Array<Invitado>
   ){
-    super(id, nombre,categoria,descripcion,fechaDeInicio,fechaDeFin,detalles,capacidadMax,responsable,escenario);
+    super(id, nombre,categoria,descripcion,fechaDeInicio,fechaDeFin,detalles,capacidadMax,imagen,responsable,escenario);
     this.organizadores = organizadores;
     this.patrocinadores = patrocinadores;
     this.multimedias = multimedias;
