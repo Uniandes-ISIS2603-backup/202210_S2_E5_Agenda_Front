@@ -14,9 +14,9 @@ export class EventoService {
 
 constructor(private http: HttpClient) { }
 
-getEventos(): Observable<Evento[]>{
+getEventos(): Observable<EventoDetail[]>{
   console.log("url",this.apiUrl);
-  return this.http.get<Evento[]>(this.apiUrl);
+  return this.http.get<EventoDetail[]>(this.apiUrl);
 }
 
 }

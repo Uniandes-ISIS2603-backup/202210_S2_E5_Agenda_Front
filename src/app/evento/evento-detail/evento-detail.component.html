@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ eventoDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ eventoDetail.imagen }}"
+          alt="{{ eventoDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Responsable</dt>
+        <dd>{{eventoDetail.responsable.nombre}}</dd>
+        <dt>Categoria</dt>
+        <dd>{{ eventoDetail.categoria }}</dd>
+        <hr />
+        <dt>Fecha de Inicio</dt>
+        <dd>{{ eventoDetail.fechaDeInicio }}</dd>
+        <hr />
+        <dt>Fecha de Fin</dt>
+        <dd>{{ eventoDetail.fechaDeFin }}</dd>
+        <hr />
+        <dt class="bold">Escenario</dt>
+        <dd class="caption">{{ eventoDetail.escenario.nombre }}</dd>
+        <hr />
+        <dt class="bold">Descripcion</dt>
+        <dd>{{ eventoDetail.descripcion }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>

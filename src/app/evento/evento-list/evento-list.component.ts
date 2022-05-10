@@ -10,12 +10,19 @@ import { EventoService } from '../evento.service';
 })
 export class EventoListComponent implements OnInit {
 
-  eventos: Array<Evento> = [];
+  eventos: Array<EventoDetail> = [];
+  selected: Boolean = false;
+  selectedEvento!: EventoDetail;
 
   constructor(private eventoService: EventoService) { }
 
   getEventos(): void {
     this.eventoService.getEventos().subscribe({next: eventos => this.eventos = eventos , error: e => console.error(e)});
+  }
+
+  onSelected(evento: EventoDetail):void{
+    this.selected = true;
+    this.selectedEvento = evento;
   }
 
   ngOnInit() {

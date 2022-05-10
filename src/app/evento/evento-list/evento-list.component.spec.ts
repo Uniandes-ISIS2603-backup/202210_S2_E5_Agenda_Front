@@ -12,6 +12,7 @@ import { Escenario, TipoEscenario } from 'src/app/escenario/escenario';
 import { Responsable } from 'src/app/responsable/responsable';
 import { Evento } from '../evento';
 import { By } from '@angular/platform-browser';
+import { EventoDetail } from '../evento-detail';
 
 
 describe('Service: Evento', () => {
@@ -50,7 +51,7 @@ describe('Service: Evento', () => {
     );
 
     component.eventos = [
-      new Evento(
+      new EventoDetail(
         faker.datatype.number(),
         faker.fake('Evento 1'),
         faker.lorem.sentence(),
@@ -61,7 +62,8 @@ describe('Service: Evento', () => {
         faker.datatype.number({max: 100000}),
         faker.image.imageUrl(),
         responsable,
-        escenario
+        escenario,
+        [],[],[],[],[]
       ),
     ];
     fixture.detectChanges();
