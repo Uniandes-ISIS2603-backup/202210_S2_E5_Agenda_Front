@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Responsable } from '../responsable';
 
 @Component({
   selector: 'app-responsable-detail',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResponsableDetailComponent implements OnInit {
 
+  @Input() responsableDetail!: Responsable;
   constructor() { }
 
   ngOnInit() {
