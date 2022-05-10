@@ -17,7 +17,7 @@ describe('ResponsableListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ HttpClientModule ],
-      declarations: [ ResponsableListComponent ]
+      declarations: [ResponsableListComponent]
     })
     .compileComponents();
   }));
