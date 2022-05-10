@@ -14,6 +14,6 @@ export class OrganizadorService {
   constructor(private http: HttpClient) { }
 
   getOrganizadores(): Observable<Organizador[]> {
-    return this.http.get<Organizador[]>('http://localhost:8080/organizadores');
+    return this.http.get<Organizador[]>('http://localhost:8080/api/organizadores');
   }
 }
