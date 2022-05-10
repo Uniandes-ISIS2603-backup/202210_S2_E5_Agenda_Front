@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Escenario } from './escenario';
 import { environment } from 'src/environments/environment';
+import { EscenarioDetail } from './escenario-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class EscenarioService {
 
   constructor( private http: HttpClient) { }
 
-    getEscenarios(): Observable<Escenario[]> {
-      return this.http.get<Escenario[]>(this.apiUrl);
+    getEscenarios(): Observable<EscenarioDetail[]> {
+      return this.http.get<EscenarioDetail[]>(this.apiUrl);
     }
 }

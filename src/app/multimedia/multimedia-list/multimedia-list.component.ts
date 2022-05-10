@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Multimedia } from '../multimedia';
+import { MultimediaDetail } from '../multimedia-detail';
 import { MultimediaService } from '../multimedia.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { MultimediaService } from '../multimedia.service';
 })
 export class MultimediaListComponent implements OnInit {
 
-  multimedias: Array<Multimedia> = [];
+  multimedias: Array<MultimediaDetail> = [];
 
 
   constructor(private multimediaService: MultimediaService) { }

@@ -3,19 +3,18 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MultimediaListComponent } from './multimedia-list.component';
+import { MultimediaDetailComponent } from './multimedia-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
 import { Escenario, TipoEscenario } from 'src/app/escenario/escenario';
 import faker from '@faker-js/faker';
-import { Multimedia } from '../multimedia';
-import { Evento } from 'src/app/evento/evento';
 import { Responsable } from 'src/app/responsable/responsable';
+import { Evento } from 'src/app/evento/evento';
 import { MultimediaDetail } from '../multimedia-detail';
-import { MultimediaService } from '../multimedia.service';
 
-describe('MultimediaListComponent', () => {
-  let component: MultimediaListComponent;
-  let fixture: ComponentFixture<MultimediaListComponent>;
+describe('MultimediaDetailComponent', () => {
+  let component: MultimediaDetailComponent;
+  let fixture: ComponentFixture<MultimediaDetailComponent>;
   let debug: DebugElement;
   let AULA: TipoEscenario;  // Aula de tipo escenario
   let AUDITORIO: TipoEscenario;  // Auditorio de tipo escenario
@@ -23,15 +22,14 @@ describe('MultimediaListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientModule],
-      declarations: [ MultimediaListComponent ],
-      providers: [MultimediaService]
+      imports:[HttpClientModule, RouterTestingModule],
+      declarations: [ MultimediaDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MultimediaListComponent);
+    fixture = TestBed.createComponent(MultimediaDetailComponent);
     component = fixture.componentInstance;
 
     let escenario = new Escenario(
@@ -63,15 +61,14 @@ describe('MultimediaListComponent', () => {
       escenario
     );
 
-    component.multimedias= [new MultimediaDetail(
+    component.multimediaDetail= new MultimediaDetail(
       faker.datatype.number(),
       faker.lorem.sentence(),
       faker.lorem.sentence(),
       faker.lorem.sentence(),
       escenario,
       evento
-    ),
-    ];
+    );
 
     fixture.detectChanges();
     debug = fixture.debugElement;

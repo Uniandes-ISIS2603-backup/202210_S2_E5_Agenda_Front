@@ -2,18 +2,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { faker } from '@faker-js/faker';
 
-import { EscenarioListComponent } from './escenario-list.component';
-import { EscenarioDetail } from '../escenario-detail';
-import { TipoEscenario } from '../escenario';
+import { EscenarioDetailComponent } from './escenario-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
+import { EscenarioDetail } from '../escenario-detail';
+import faker from '@faker-js/faker';
+import { TipoEscenario } from '../escenario';
 import { EscenarioService } from '../escenario.service';
 
-describe('EscenarioListComponent', () => {
-  let component: EscenarioListComponent;
-  let fixture: ComponentFixture<EscenarioListComponent>;
-  let debug:  DebugElement
+describe('EscenarioDetailComponent', () => {
+  let component: EscenarioDetailComponent;
+  let fixture: ComponentFixture<EscenarioDetailComponent>;
+  let debug: DebugElement
 
   let AULA: TipoEscenario
   let AUDITORIO: TipoEscenario;  // Auditorio de tipo escenario
@@ -21,18 +22,17 @@ describe('EscenarioListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      declarations: [ EscenarioListComponent ],
-      providers: [EscenarioService]
+      imports:[HttpClientModule, RouterTestingModule],
+      declarations: [ EscenarioDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EscenarioListComponent);
+    fixture = TestBed.createComponent(EscenarioDetailComponent);
     component = fixture.componentInstance;
 
-    component.escenarios = [
+    component.escenarioDetail =
       new EscenarioDetail(
         faker.datatype.number(),
         faker.lorem.sentence(),
@@ -40,9 +40,7 @@ describe('EscenarioListComponent', () => {
         faker.datatype.number(),
         [],
         []
-      ),
-    ];
-
+      );
 
     fixture.detectChanges();
     debug = fixture.debugElement;

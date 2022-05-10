@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Escenario } from '../escenario';
+import { EscenarioDetail } from '../escenario-detail';
 import { EscenarioService } from '../escenario.service';
 
 
@@ -10,7 +11,7 @@ import { EscenarioService } from '../escenario.service';
 })
 export class EscenarioListComponent implements OnInit {
 
-  escenarios: Array<Escenario> = [];
+  escenarios: Array<EscenarioDetail> = [];
 
 
   constructor(private escenarioService: EscenarioService) { }

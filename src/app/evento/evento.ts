@@ -10,6 +10,7 @@ export class Evento{
 	fechaDeFin: any;
 	detalles: string;
 	capacidadMax: number;
+  imagen: string;
 	responsable: Responsable;
 	escenario: Escenario;
 
@@ -22,6 +23,7 @@ export class Evento{
     fechaDeFin: any,
     detalles: string,
     capacidadMax: number,
+    imagen: string,
     responsable: Responsable,
     escenario: Escenario
   )
@@ -34,6 +36,7 @@ export class Evento{
     this.fechaDeFin = fechaDeFin;
     this.detalles = detalles;
     this.capacidadMax = capacidadMax;
+    this.imagen = imagen;
     this.responsable = responsable;
     this.escenario = escenario;
   }

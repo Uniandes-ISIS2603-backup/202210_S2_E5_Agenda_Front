@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Multimedia } from './multimedia';
 import { environment } from 'src/environments/environment';
+import { MultimediaDetail } from './multimedia-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class MultimediaService {
 
   constructor( private http: HttpClient) { }
 
-    getMultimedias(): Observable<Multimedia[]> {
-      return this.http.get<Multimedia[]>(this.apiUrl);
+    getMultimedias(): Observable<MultimediaDetail[]> {
+      return this.http.get<MultimediaDetail[]>(this.apiUrl);
     }
   }
