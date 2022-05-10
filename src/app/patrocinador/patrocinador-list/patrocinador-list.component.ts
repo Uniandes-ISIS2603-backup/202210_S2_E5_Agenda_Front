@@ -11,6 +11,8 @@ import { Patrocinador } from '../patrocinador';
 export class PatrocinadorListComponent implements OnInit {
 
   patrocinadores: Array<Patrocinador> = [];
+  selectedPatrocinador!: Patrocinador;
+  selected: Boolean = false;
 
 
   constructor(private patrocinadorService: PatrocinadorService) { }
@@ -22,6 +24,11 @@ export class PatrocinadorListComponent implements OnInit {
 
     this.getPatrocinadores();
 
+  }
+
+  onSelected(patrocinador: Patrocinador): void {
+    this.selectedPatrocinador = patrocinador;
+    this.selected = true;
   }
 
 }

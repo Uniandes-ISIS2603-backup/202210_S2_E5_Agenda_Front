@@ -1,4 +1,6 @@
-
+<div *ngIf="selected">
+  <app-patrocinador-detail [patrocinadorDetail]="selectedPatrocinador"></app-patrocinador-detail>
+</div>
 
 <div class="container-fluid">
   <div class="row">
@@ -8,6 +10,7 @@
                 class="card-img-top"
                 src="{{patrocinador.logoCompania}}"
                 alt="{{ patrocinador.nombre}}"
+                (click)="onSelected(patrocinador)"
               />
               <div class="card-body">
                 <h5 class="card-title">{{ patrocinador.nombre }}</h5>

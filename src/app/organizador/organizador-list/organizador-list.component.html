@@ -1,10 +1,14 @@
+<div *ngIf="selected">
+  <app-organizador-detail [organizadorDetail]="selectedOrganizador"></app-organizador-detail>
+</div>
 <div class="container-fluid">
   <div class="row">
     <div class="col mb-2" *ngFor="let organizador of organizadores">
-          <div class="card p-2" style="width: 15rem; height: 20rem">
+          <div class="card p-2" style="width: 15rem; height: 15rem">
               <div class="card-body">
                 <h5 class="card-title">{{ organizador.nombre }}</h5>
                   <p class="card-text">{{ organizador.correo}}</p>
+                  (click)="onSelected(organizador)"
               </div>
            </div>
       </div>

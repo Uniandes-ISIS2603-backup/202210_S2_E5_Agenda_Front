@@ -11,6 +11,8 @@ import { OrganizadorService } from '../organizador.service';
 export class OrganizadorListComponent implements OnInit {
   organizadores: Array<Organizador> =[];
   eventos: Array<Evento>= [];
+  selectedOrganizador!: Organizador;
+  selected: Boolean = false;
 
   constructor(private organizadorService: OrganizadorService) {}
   getOrganizadores(): void {
