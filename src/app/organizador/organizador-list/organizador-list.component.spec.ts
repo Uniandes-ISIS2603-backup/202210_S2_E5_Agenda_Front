@@ -6,6 +6,7 @@ import { faker } from '@faker-js/faker';
 import { OrganizadorListComponent } from './organizador-list.component';
 import { Organizador } from '../organizador';
 import { HttpClientModule } from '@angular/common/http';
+import { OrganizadorDetail } from '../organizador-detail';
 
 describe('OrganizadorListComponent', () => {
   let component: OrganizadorListComponent;
@@ -23,13 +24,13 @@ describe('OrganizadorListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(OrganizadorListComponent);
     component = fixture.componentInstance;
-
     component.organizadores = [
-      new Organizador(
+      new OrganizadorDetail(
         faker.datatype.number(),
         faker.lorem.sentence(),
         faker.lorem.sentence(),
-        faker.lorem.sentence()
+        faker.lorem.sentence(),
+        []
       ),
     ];
 

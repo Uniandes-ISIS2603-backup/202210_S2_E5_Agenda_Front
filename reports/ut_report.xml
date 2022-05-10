@@ -1,4 +1,26 @@
 <testExecutions version="1">
+<<<<<<< HEAD
+  <file path="src/app/patrocinador/patrocinador.service.spec.ts">
+    <testCase name="Service: Patrocinador should ..." duration="11"/>
+  </file>
+  <file path="src/app/invitado/invitado-list/invitado-list.component.spec.ts">
+    <testCase name="InvitadoListComponent should create" duration="26"/>
+  </file>
+  <file path="src/app/patrocinador/patrocinador-list/patrocinador-list.component.spec.ts">
+    <testCase name="PatrocinadorListComponent should create" duration="14"/>
+  </file>
+  <file path="src/app/responsable/responsable.service.spec.ts">
+    <testCase name="Service: Responsable should ..." duration="3"/>
+  </file>
+  <file path="src/app/evento/evento.service.spec.ts">
+    <testCase name="Service: Evento should create" duration="32"/>
+  </file>
+  <file path="src/app/invitado/invitado.service.spec.ts">
+    <testCase name="Service: Invitado should ..." duration="2"/>
+  </file>
+  <file path="src/app/multimedia/multimedia-list/multimedia-list.component.spec.ts">
+    <testCase name="MultimediaListComponent should create" duration="8"/>
+=======
   <file path="src/app/invitado/invitado.service.spec.ts">
     <testCase name="Service: Invitado should ..." duration="32"/>
   </file>
@@ -29,10 +51,48 @@
   </file>
   <file path="src/app/escenario/escenario.service.spec.ts">
     <testCase name="Service: Escenario should ..." duration="6"/>
+>>>>>>> de852d62ff3e514085c9c5710960307091d7ddd7
   </file>
   <file path="src/app/organizador/organizador.service.spec.ts">
     <testCase name="Service: Organizador should ..." duration="3"/>
   </file>
+<<<<<<< HEAD
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="8"/>
+  </file>
+  <file path="src/app/actividad/actividad.service.spec.ts">
+    <testCase name="Service: Actividad should ..." duration="6"/>
+  </file>
+  <file path="src/app/actividad/actividad-list/actividad-list.component.spec.ts">
+    <testCase name="ActividadListComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/multimedia/multimedia.service.spec.ts">
+    <testCase name="Service: Multimedia should ..." duration="2"/>
+  </file>
+  <file path="src/app/evento/evento-list/evento-list.component.spec.ts">
+    <testCase name="EventoListComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/organizador/organizador-list/organizador-list.component.spec.ts">
+    <testCase name="OrganizadorListComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
+    <testCase name="ResponsableListComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/escenario/escenario.service.spec.ts">
+    <testCase name="Service: Escenario should ..." duration="3"/>
+  </file>
+  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
+    <testCase name="ResponsableListComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/organizador/organizador-detail/organizador-detail.component.spec.ts">
+    <testCase name="OrganizadorDetailComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/escenario/escenario-list/escenario-list.component.spec.ts">
+    <testCase name="EscenarioListComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/patrocinador/patrocinador-detail/patrocinador-detail.component.spec.ts">
+    <testCase name="PatrocinadorDetailComponent should create" duration="7"/>
+=======
   <file path="src/app/multimedia/multimedia.service.spec.ts">
     <testCase name="Service: Multimedia should ..." duration="3"/>
   </file>
@@ -63,5 +123,6 @@
   </file>
   <file path="src/app/multimedia/multimedia-detail/multimedia-detail.component.spec.ts">
     <testCase name="MultimediaDetailComponent should create" duration="9"/>
+>>>>>>> de852d62ff3e514085c9c5710960307091d7ddd7
   </file>
 </testExecutions>

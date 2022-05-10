@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Organizador } from '../organizador';
 
 @Component({
   selector: 'app-organizador-detail',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizadorDetailComponent implements OnInit {
 
+  @Input() organizadorDetail!: Organizador;
+  selectedOrganizador!: Organizador;
+  selected=false;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  onSelected(organizador: Organizador){
+    this.selected=true;
+    this.selectedOrganizador = organizador;
+  }
 }
