@@ -6,6 +6,7 @@ import { faker } from '@faker-js/faker';
 import { ResponsableListComponent } from './responsable-list.component';
 import { Responsable } from '../responsable';
 import { HttpClientModule } from '@angular/common/http';
+import { ResponsableDetail } from '../responsable-detail';
 
 
 
@@ -26,12 +27,13 @@ describe('ResponsableListComponent', () => {
     fixture = TestBed.createComponent(ResponsableListComponent);
     component = fixture.componentInstance;
     component.responsables = [
-      new Responsable(
+      new ResponsableDetail(
         faker.datatype.number(),
         faker.lorem.sentence(),
         faker.lorem.sentence(),
         faker.lorem.sentence(),
-        faker.lorem.sentence()
+        faker.lorem.sentence(),
+        []
       )
      ];
 

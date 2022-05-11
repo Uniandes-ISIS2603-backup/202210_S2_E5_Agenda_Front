@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Evento } from 'src/app/evento/evento';
 import { Responsable } from '../responsable';
 import { ResponsableService } from '../responsable.service';
 
@@ -9,6 +10,9 @@ import { ResponsableService } from '../responsable.service';
 })
 export class ResponsableListComponent implements OnInit {
   responsables: Array<Responsable> =[];
+  eventos: Array<Evento>= [];
+  selectedResponsable !: Responsable;
+  selected: Boolean = false;
 
   constructor(private responsableService: ResponsableService) { }
   getResponsables(): void {
