@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\invitado",
+    "\\src\\app\\invitado\\invitado-list",
+    "\\src\\app\\organizador",
+    "\\src\\app\\organizador\\organizador-list",
+    "\\src\\app\\patrocinador",
+    "\\src\\app\\patrocinador\\patrocinador-list"
+  ],
+  "SelectedNode": "\\src\\app\\invitado\\invitado-detail.ts",
+  "PreviewInSolutionExplorer": false
+}

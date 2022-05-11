@@ -14,6 +14,6 @@ export class InvitadoService {
   constructor(private http: HttpClient) { }
 
   getInvitados(): Observable<Invitado[]> {
-    return this.http.get<Invitado[]>('http://localhost:8080/invitados');
+    return this.http.get<Invitado[]>('http://localhost:8080/api/invitados');
   }
 }
