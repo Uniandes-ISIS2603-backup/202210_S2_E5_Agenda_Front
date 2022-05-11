@@ -12,13 +12,23 @@ import { EscenarioService } from '../escenario.service';
 export class EscenarioListComponent implements OnInit {
 
   escenarios: Array<EscenarioDetail> = [];
+  selected: Boolean = false;
+  selectedEscenario!: EscenarioDetail;
 
 
   constructor(private escenarioService: EscenarioService) { }
 
   getEscenarios(): void {
-    this.escenarioService.getEscenarios().subscribe(escenarios => {  this.escenarios = escenarios; });
+    this.escenarioService.getEscenarios().subscribe({next: escenarios =>   this.escenarios = escenarios, error: e => console.error(e) });
   }
+
+
+  onSelected(escenario: EscenarioDetail):void{
+    this.selected = true;
+    this.selectedEscenario = escenario;
+  }
+
+
   ngOnInit() {
 
     this.getEscenarios();

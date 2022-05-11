@@ -1,3 +1,20 @@
-<p>
-  escenario-detail works!
-</p>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ escenarioDetail.nombre }}</p>
+  <div class="row">
+    <div class="col">
+      <dl>
+        <dt>Eventos</dt>
+        <dd>No hay informacion</dd>
+        <hr />
+        <dt>Multimedias</dt>
+        <dd>No hay informacion</dd>
+        <hr />
+        <dt>Tipo de Escenario</dt>
+        <dd>{{ escenarioDetail.tipo }}</dd>
+        <hr />
+        <dt>Aforo Permitido</dt>
+        <dd>{{ escenarioDetail.aforoPermitido }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>

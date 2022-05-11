@@ -1,3 +1,20 @@
-<p>
-  multimedia-detail works!
-</p>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ multimediaDetail.nombre }}</p>
+  <div class="row">
+    <div class="col">
+      <dl>
+        <dt class="bold">Evento</dt>
+        <dd class="caption">{{ multimediaDetail.evento.nombre }}</dd>
+        <hr />
+        <dt>Tipo de Multimedia</dt>
+        <dd>{{ multimediaDetail.tipo }}</dd>
+        <hr />
+        <dt>Direccion URL</dt>
+        <dd>{{ multimediaDetail.direccion }}</dd>
+        <hr />
+        <dt class="bold">Escenario</dt>
+        <dd class="caption">{{ multimediaDetail.escenario.nombre }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>

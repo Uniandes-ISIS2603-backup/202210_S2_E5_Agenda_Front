@@ -11,6 +11,8 @@ import { MultimediaService } from '../multimedia.service';
 export class MultimediaListComponent implements OnInit {
 
   multimedias: Array<MultimediaDetail> = [];
+  selected: Boolean = false;
+  selectedMultimedia!: MultimediaDetail;
 
 
   constructor(private multimediaService: MultimediaService) { }
@@ -18,6 +20,14 @@ export class MultimediaListComponent implements OnInit {
   getMultimedias(): void {
     this.multimediaService.getMultimedias().subscribe(multimedias => {  this.multimedias = multimedias; });
   }
+
+
+  onSelected(multimedia: MultimediaDetail):void{
+    this.selected = true;
+    this.selectedMultimedia = multimedia;
+  }
+
+
   ngOnInit() {
 
     this.getMultimedias();
