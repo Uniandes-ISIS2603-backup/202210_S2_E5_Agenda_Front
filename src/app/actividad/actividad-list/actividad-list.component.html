@@ -1,3 +1,17 @@
-<p>
-  actividad-list works!
-</p>
+<div *ngIf="selected">
+<app-actividad-detail [actividadDetail]="selectedActividad"></app-actividad-detail>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let actividad of actividades">
+          <div class="card p-2" style="width: 15rem; height: 15rem">
+              <div class="card-body">
+                <h5 class="card-title" (click)="onSelected(actividad)">{{ actividad.nombre }}</h5>
+                  <p class="card-text">{{ actividad.descripcion}}</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
