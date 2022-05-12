@@ -10,6 +10,8 @@ import { PatrocinadorModule } from './patrocinador/patrocinador.module';
 import { OrganizadorModule } from './organizador/organizador.module';
 import { ResponsableModule } from './responsable/responsable.module';
 import { ActividadModule } from './actividad/actividad.module';
+import { EscenarioModule } from './escenario/escenario.module';
+import { MultimediaModule } from './multimedia/multimedia.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ActividadModule } from './actividad/actividad.module';
     OrganizadorModule,
     ResponsableModule,
     ActividadModule,
+    EscenarioModule,
+    MultimediaModule
 
   ],
   providers: [],

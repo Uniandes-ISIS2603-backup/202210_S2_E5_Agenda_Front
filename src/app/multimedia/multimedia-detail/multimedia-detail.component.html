@@ -4,13 +4,16 @@
     <div class="col">
       <dl>
         <dt class="bold">Evento</dt>
-        <dd class="caption">{{ multimediaDetail.evento.nombre }}</dd>
+        <dd class="caption">No aparece el nombre de evento porque no creamos asociacion en el back</dd>
         <hr />
         <dt>Tipo de Multimedia</dt>
         <dd>{{ multimediaDetail.tipo }}</dd>
         <hr />
-        <dt>Direccion URL</dt>
-        <dd>{{ multimediaDetail.direccion }}</dd>
+        <dt>Direccion</dt>
+        <dd><a
+          href = "{{ multimediaDetail.direccion }}"
+        >
+        </a></dd>
         <hr />
         <dt class="bold">Escenario</dt>
         <dd class="caption">{{ multimediaDetail.escenario.nombre }}</dd>
