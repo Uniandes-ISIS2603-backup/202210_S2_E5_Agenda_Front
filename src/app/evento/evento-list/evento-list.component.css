@@ -3,3 +3,16 @@ img {
   width: auto;
   max-width: 400px;
 }
+#panelFiltro{
+  background-color: #ffc900;
+}
+#busquedaCat{
+  width : 180px;
+}
+
+button{
+  border-radius: 8px;
+  background-color: rgb(224, 224, 224);
+}
+
+

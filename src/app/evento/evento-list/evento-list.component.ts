@@ -29,4 +29,25 @@ export class EventoListComponent implements OnInit {
     this.getEventos();
   }
 
+  filtrarPorCategoria(categoria:String): Array<Evento> {
+    let filtro:Array<Evento> = Array<Evento>();
+
+    this.eventos.forEach(evento => {
+      if (evento.categoria === categoria) {
+        filtro.push(evento);
+      }
+    });
+    return filtro;
+  }
+
+  filtrarPorFecha(fechaInicio:String, fechaFin: String): Array<Evento> {
+    let filtro:Array<Evento> = Array<Evento>();
+
+    this.eventos.forEach(evento => {
+      if (evento.fechaDeInicio >= fechaInicio && evento.fechaDeFin <= fechaFin) {
+        filtro.push(evento);
+      }
+    });
+    return filtro;
+  }
 }

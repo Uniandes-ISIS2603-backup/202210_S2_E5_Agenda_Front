@@ -1,3 +1,11 @@
 * [lang^=en] {
   color: green;
 }
+
+#banner{
+  background-color: #1A5F7A;
+}
+h1{
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
