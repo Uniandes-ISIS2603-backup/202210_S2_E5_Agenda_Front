@@ -17,6 +17,20 @@
       <input type="date" id="fecha de Inicio" name="date_name" />
       <input type="date" id="fecha de Fin" name="date_name" /> <br><br>
       <button type="button" id="boton-filtro" class="btn btn-succes">Aplicar</button>
+      <br>
+      <br>
+      <p>
+        Buscar por patrocinador:
+      </p>
+      <input type="text" class="form-control" id="busquedaPat" placeholder="Buscar por patrocinador" /> <br>
+      <button type="button" id="boton-busqueda" class="btn btn-succes">Aplicar</button>
+      <br>
+      <br>
+      <p>
+        Buscar por organizador:
+      </p>
+      <input type="text" class="form-control" id="busquedaOrg" placeholder="Buscar por organizador" /> <br>
+      <button type="button" id="boton-busqueda" class="btn btn-succes">Aplicar</button>
     </div>
     <div class="col mb-2" *ngFor="let evento of eventos">
           <div class="card p-2" style="width: 15rem; height: 33rem">
