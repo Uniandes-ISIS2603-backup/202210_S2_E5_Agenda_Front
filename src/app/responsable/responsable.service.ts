@@ -14,7 +14,7 @@ export class ResponsableService {
 
 constructor(private http: HttpClient) { }
 getResponsables(): Observable<Responsable[]>{
-  return this.http.get<Responsable[]>('http://localhost:8080/responsables');
+  return this.http.get<Responsable[]>('http://localhost:8080/api/responsables');
 }
 
 
