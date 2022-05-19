@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Organizador } from 'src/app/organizador/organizador';
+import { Patrocinador } from 'src/app/patrocinador/patrocinador';
 import { Evento } from '../evento';
 import { EventoDetail } from '../evento-detail';
 import { EventoService } from '../evento.service';
@@ -50,4 +52,45 @@ export class EventoListComponent implements OnInit {
     });
     return filtro;
   }
+
+
+  buscarPorPatrocinador(nombrePatrocinador:String): Array<Evento> 
+  {
+    let resp: Array<Evento> = Array<Evento>();
+
+    this.eventos.forEach(evento => 
+      {
+        let act: Array<Patrocinador> = evento.patrocinadores;
+        act.forEach(patrocinador => {
+            if (patrocinador.nombre == nombrePatrocinador)
+            {
+              resp.push(evento);
+            }
+          }
+          )
+
+      });
+    return resp;
+  }
+
+  buscarPorOrganizador(nombreOrganizador:String): Array<Evento> 
+  {
+    let resp: Array<Evento> = Array<Evento>();
+
+    this.eventos.forEach(evento => 
+      {
+        let act: Array<Organizador> = evento.organizadores;
+        act.forEach(organizador => {
+            if (organizador.nombre == nombreOrganizador)
+            {
+              resp.push(evento);
+            }
+          }
+          )
+
+      });
+    return resp;
+  }
+
+
 }
