@@ -8,15 +8,15 @@
       <p>
         Filtrar por Categoria:
       </p>
-      <input type="text" class="form-control" id="busquedaCat" placeholder="Filtrar por Categoria" /> <br>
-      <button type="button" id="boton-filtro" class="btn btn-succes">Aplicar</button>
+      <input type="text" class="form-control" id="busquedaCat" placeholder="Filtrar por Categoria" #filter /> <br>
+      <button type="button" id="boton-filtro" class="btn btn-succes" (click)="filtrarPorCategoria(filter.value)">Aplicar</button>
       <p>
         <br>
         Filtrar por fecha:
       </p>
-      <input type="date" id="fecha de Inicio" name="date_name" />
-      <input type="date" id="fecha de Fin" name="date_name" /> <br><br>
-      <button type="button" id="boton-filtro" class="btn btn-succes">Aplicar</button>
+      <input type="date" id="fecha de Inicio" name="date_name" #fechaInicial/>
+      <input type="date" id="fecha de Fin" name="date_name" #fechaFinal/> <br><br>
+      <button type="button" id="boton-filtro" class="btn btn-succes" (click)="filtrarPorFecha(fechaInicial.value, fechaFinal.value)">Aplicar</button>
     </div>
     <div class="col mb-2" *ngFor="let evento of eventos">
           <div class="card p-2" style="width: 15rem; height: 33rem">
