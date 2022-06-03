@@ -21,6 +21,11 @@ export class ResponsableListComponent implements OnInit {
     });
     }
 
+    onSelected(responsable: Responsable){
+      this.selectedResponsable = responsable;
+      this.selected = true;
+    }
+
   ngOnInit() {
     this.getResponsables();
   }

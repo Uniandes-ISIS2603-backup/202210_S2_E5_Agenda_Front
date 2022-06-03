@@ -9,16 +9,10 @@ import { Responsable } from '../responsable';
 export class ResponsableDetailComponent implements OnInit {
 
   @Input() responsableDetail!: Responsable;
-  selectedResponsable!: Responsable;
-  selected = false;
 
   constructor() { }
 
   ngOnInit() {
-  }
-  onSelected(responsable:Responsable){
-    this.selectedResponsable = responsable;
-    this.selected = true;
   }
 
 }
