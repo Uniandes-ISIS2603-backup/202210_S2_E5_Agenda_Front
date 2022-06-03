@@ -53,7 +53,7 @@ export class EventoListComponent implements OnInit {
     return filtro;
   }
 
-
+  //Filtrado eventos por patrocinador
   buscarPorPatrocinador(nombrePatrocinador:String): Array<Evento>
   {
     let resp: Array<Evento> = Array<Evento>();
@@ -73,6 +73,7 @@ export class EventoListComponent implements OnInit {
     return resp;
   }
 
+  //Filtrado de evento por organizador
   buscarPorOrganizador(nombreOrganizador:String): Array<Evento>
   {
     let resp: Array<Evento> = Array<Evento>();

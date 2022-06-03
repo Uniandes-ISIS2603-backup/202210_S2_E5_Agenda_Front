@@ -51,4 +51,9 @@ describe('EscenarioListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a h5 element ', () => {
+    expect(debug.query(By.css('h5')).nativeElement.innerHTML).toContain(component.escenarios[0].nombre)
+  });
+
 });

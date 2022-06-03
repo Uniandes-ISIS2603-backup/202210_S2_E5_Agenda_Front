@@ -1,18 +1,40 @@
 <testExecutions version="1">
+  <file path="src/app/actividad/actividad-list/actividad-list.component.spec.ts">
+    <testCase name="ActividadListComponent should create" duration="81"/>
+  </file>
+  <file path="src/app/redSocial/redSocial.service.spec.ts">
+    <testCase name="Service: redSocial should ..." duration="5"/>
+  </file>
+  <file path="src/app/responsable/responsable-detail/responsable-detail.component.spec.ts">
+    <testCase name="ResponsableDetailComponent should create" duration="22"/>
+  </file>
+  <file path="src/app/actividad/actividad.service.spec.ts">
+    <testCase name="Service: Actividad should ..." duration="5"/>
+  </file>
+  <file path="src/app/evento/evento.service.spec.ts">
+    <testCase name="Service: Evento should ..." duration="4"/>
+  </file>
+  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
+    <testCase name="ResponsableListComponent should create" duration="27"/>
+  </file>
+  <file path="src/app/responsable/responsable.service.spec.ts">
+    <testCase name="Service: Responsable should ..." duration="3"/>
+  </file>
+  <file path="src/app/escenario/escenario-detail/escenario-detail.component.spec.ts">
+    <testCase name="EscenarioDetailComponent should have a dt element " duration="23"/>
+    <testCase name="EscenarioDetailComponent should have a p element " duration="16"/>
+    <testCase name="EscenarioDetailComponent should have a dd element " duration="14"/>
+    <testCase name="EscenarioDetailComponent should create" duration="12"/>
+  </file>
   <file path="src/app/invitado/invitado.service.spec.ts">
-    <testCase name="Service: Invitado should ..." duration="25"/>
+    <testCase name="Service: Invitado should ..." duration="11"/>
   </file>
-  <file path="src/app/organizador/organizador-list/organizador-list.component.spec.ts">
-    <testCase name="OrganizadorListComponent should create" duration="73"/>
-  </file>
-  <file path="src/app/redSocial/redSocial-list/redSocial-list.component.spec.ts">
-    <testCase name="redSocialListComponent should create" duration="23"/>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="8"/>
   </file>
   <file path="src/app/multimedia/multimedia-list/multimedia-list.component.spec.ts">
-    <testCase name="MultimediaListComponent should create" duration="21"/>
-  </file>
-  <file path="src/app/patrocinador/patrocinador.service.spec.ts">
-    <testCase name="Service: Patrocinador should ..." duration="3"/>
+    <testCase name="MultimediaListComponent should create" duration="31"/>
+    <testCase name="MultimediaListComponent should have a h5 element " duration="20"/>
   </file>
   <file path="src/app/invitado/invitado-list/invitado-list.component.spec.ts">
     <testCase name="InvitadoListComponent should create" duration="23"/>
@@ -20,63 +42,49 @@
   <file path="src/app/actividad/actividad-detail/actividad-detail.component.spec.ts">
     <testCase name="ActividadDetailComponent should create" duration="19"/>
   </file>
-  <file path="src/app/multimedia/multimedia-detail/multimedia-detail.component.spec.ts">
-    <testCase name="MultimediaDetailComponent should create" duration="16"/>
-  </file>
-  <file path="src/app/responsable/responsable-list/responsable-list.component.spec.ts">
-    <testCase name="ResponsableListComponent should create" duration="18"/>
-  </file>
-  <file path="src/app/responsable/responsable.service.spec.ts">
-    <testCase name="Service: Responsable should ..." duration="3"/>
+  <file path="src/app/organizador/organizador-detail/organizador-detail.component.spec.ts">
+    <testCase name="OrganizadorDetailComponent should create" duration="12"/>
   </file>
   <file path="src/app/escenario/escenario-list/escenario-list.component.spec.ts">
-    <testCase name="EscenarioListComponent should create" duration="14"/>
+    <testCase name="EscenarioListComponent should have a h5 element " duration="14"/>
+    <testCase name="EscenarioListComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/multimedia/multimedia-detail/multimedia-detail.component.spec.ts">
+    <testCase name="MultimediaDetailComponent should have a p element " duration="24"/>
+    <testCase name="MultimediaDetailComponent should create" duration="16"/>
+    <testCase name="MultimediaDetailComponent should have a dt element " duration="19"/>
+    <testCase name="MultimediaDetailComponent should have a dd element " duration="12"/>
+  </file>
+  <file path="src/app/organizador/organizador-list/organizador-list.component.spec.ts">
+    <testCase name="OrganizadorListComponent should create" duration="15"/>
+  </file>
+  <file path="src/app/patrocinador/patrocinador.service.spec.ts">
+    <testCase name="Service: Patrocinador should ..." duration="3"/>
   </file>
   <file path="src/app/escenario/escenario.service.spec.ts">
     <testCase name="Service: Escenario should ..." duration="3"/>
   </file>
-  <file path="src/app/evento/evento.service.spec.ts">
-    <testCase name="Service: Evento should ..." duration="3"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="13"/>
-  </file>
-  <file path="src/app/escenario/escenario-detail/escenario-detail.component.spec.ts">
-    <testCase name="EscenarioDetailComponent should create" duration="13"/>
-  </file>
-  <file path="src/app/organizador/organizador-detail/organizador-detail.component.spec.ts">
-    <testCase name="OrganizadorDetailComponent should create" duration="9"/>
-  </file>
-  <file path="src/app/responsable/responsable-detail/responsable-detail.component.spec.ts">
-    <testCase name="ResponsableDetailComponent should create" duration="12"/>
-  </file>
-  <file path="src/app/redSocial/redSocial.service.spec.ts">
-    <testCase name="Service: redSocial should ..." duration="3"/>
-  </file>
-  <file path="src/app/patrocinador/patrocinador-list/patrocinador-list.component.spec.ts">
-    <testCase name="PatrocinadorListComponent should create" duration="15"/>
-  </file>
   <file path="src/app/organizador/organizador.service.spec.ts">
-    <testCase name="Service: Organizador should ..." duration="4"/>
+    <testCase name="Service: Organizador should ..." duration="5"/>
   </file>
-  <file path="src/app/evento/evento-detail/evento-detail.component.spec.ts">
-    <testCase name="EventoDetailComponent should have an img element" duration="22"/>
-    <testCase name="EventoDetailComponent should create" duration="10"/>
-  </file>
-  <file path="src/app/patrocinador/patrocinador-detail/patrocinador-detail.component.spec.ts">
-    <testCase name="PatrocinadorDetailComponent should create" duration="9"/>
+  <file path="src/app/redSocial/redSocial-list/redSocial-list.component.spec.ts">
+    <testCase name="redSocialListComponent should create" duration="13"/>
   </file>
   <file path="src/app/multimedia/multimedia.service.spec.ts">
     <testCase name="Service: Multimedia should ..." duration="2"/>
   </file>
   <file path="src/app/evento/evento.service.spec.ts">
-    <testCase name="Service: Evento should create" duration="19"/>
-    <testCase name="Service: Evento should have an img element " duration="10"/>
+    <testCase name="Service: Evento should create" duration="22"/>
+    <testCase name="Service: Evento should have an img element " duration="12"/>
   </file>
-  <file path="src/app/actividad/actividad-list/actividad-list.component.spec.ts">
-    <testCase name="ActividadListComponent should create" duration="14"/>
+  <file path="src/app/patrocinador/patrocinador-detail/patrocinador-detail.component.spec.ts">
+    <testCase name="PatrocinadorDetailComponent should create" duration="9"/>
   </file>
-  <file path="src/app/actividad/actividad.service.spec.ts">
-    <testCase name="Service: Actividad should ..." duration="3"/>
+  <file path="src/app/patrocinador/patrocinador-list/patrocinador-list.component.spec.ts">
+    <testCase name="PatrocinadorListComponent should create" duration="16"/>
+  </file>
+  <file path="src/app/evento/evento-detail/evento-detail.component.spec.ts">
+    <testCase name="EventoDetailComponent should have an img element" duration="17"/>
+    <testCase name="EventoDetailComponent should create" duration="17"/>
   </file>
 </testExecutions>

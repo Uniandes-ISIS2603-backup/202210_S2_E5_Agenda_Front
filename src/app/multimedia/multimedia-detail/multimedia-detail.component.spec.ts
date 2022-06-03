@@ -77,4 +77,17 @@ describe('MultimediaDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a p element ', () => {
+    expect(debug.query(By.css('p')).nativeElement.innerHTML).toContain(component.multimediaDetail.nombre)
+  });
+
+  it('should have a dd element ', () => {
+    expect(debug.query(By.css('dd')).nativeElement.innerHTML).toBeDefined
+  });
+
+  it('should have a dt element ', () => {
+    expect(debug.query(By.css('dd')).nativeElement.innerHTML).toBeDefined
+  });
+
 });

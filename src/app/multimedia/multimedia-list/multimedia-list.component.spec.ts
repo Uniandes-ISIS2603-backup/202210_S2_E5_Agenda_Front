@@ -80,4 +80,8 @@ describe('MultimediaListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a h5 element ', () => {
+    expect(debug.query(By.css('h5')).nativeElement.innerHTML).toContain(component.multimedias[0].nombre)
+  });
 });
