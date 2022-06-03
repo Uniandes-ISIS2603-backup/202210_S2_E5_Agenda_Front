@@ -54,11 +54,11 @@ export class EventoListComponent implements OnInit {
   }
 
 
-  buscarPorPatrocinador(nombrePatrocinador:String): Array<Evento> 
+  buscarPorPatrocinador(nombrePatrocinador:String): Array<Evento>
   {
     let resp: Array<Evento> = Array<Evento>();
 
-    this.eventos.forEach(evento => 
+    this.eventos.forEach(evento =>
       {
         let act: Array<Patrocinador> = evento.patrocinadores;
         act.forEach(patrocinador => {
@@ -73,11 +73,11 @@ export class EventoListComponent implements OnInit {
     return resp;
   }
 
-  buscarPorOrganizador(nombreOrganizador:String): Array<Evento> 
+  buscarPorOrganizador(nombreOrganizador:String): Array<Evento>
   {
     let resp: Array<Evento> = Array<Evento>();
 
-    this.eventos.forEach(evento => 
+    this.eventos.forEach(evento =>
       {
         let act: Array<Organizador> = evento.organizadores;
         act.forEach(organizador => {
