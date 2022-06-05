@@ -12,6 +12,7 @@ import { ResponsableModule } from './responsable/responsable.module';
 import { ActividadModule } from './actividad/actividad.module';
 import { EscenarioModule } from './escenario/escenario.module';
 import { MultimediaModule } from './multimedia/multimedia.module';
+import { EventoRoutingModule } from './evento/evento-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MultimediaModule } from './multimedia/multimedia.module';
     ResponsableModule,
     ActividadModule,
     EscenarioModule,
-    MultimediaModule
+    MultimediaModule,
+    EventoRoutingModule
 
   ],
   providers: [],

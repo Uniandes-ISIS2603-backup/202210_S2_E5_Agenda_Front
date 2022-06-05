@@ -1,9 +1,70 @@
+<!-- Navigation bar -->
 
-<div class = 'row' id="banner">
-  <div class="col-lg-6">
-    <h1>Agenda universidad del Oriente</h1>
+<nav
+  class="navbar navbar-expand-lg navbar-dark"
+  style="background-color: #15426d"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Agenda Universidad del Oriente</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Eventos</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="/eventos/list">List</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Patrocinadores
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="/patrocinadores/list">List</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class = 'row'>
-  <app-evento-list></app-evento-list>
+</nav>
+
+<!-- Main Router Oulet -->
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <app-evento-list></app-evento-list>
+      </div>
+    </div>
+  </div>
 </div>
