@@ -12,6 +12,9 @@
     </div>
     <div class="col">
       <dl>
+        <dd class="caption" *ngFor="let actividad of eventoDetail.actividades">
+          <a routerLink="/actividades/{{ actividad.id }}">{{ actividad.nombre }}</a>
+        </dd>
         <dt>Responsable</dt>
         <dd>{{eventoDetail.responsable.nombre}}</dd>
         <hr />

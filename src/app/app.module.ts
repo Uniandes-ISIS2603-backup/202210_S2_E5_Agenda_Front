@@ -13,6 +13,7 @@ import { ActividadModule } from './actividad/actividad.module';
 import { EscenarioModule } from './escenario/escenario.module';
 import { MultimediaModule } from './multimedia/multimedia.module';
 import { EventoRoutingModule } from './evento/evento-routing.module';
+import { ActividadRoutingModule } from './actividad/actividad-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { EventoRoutingModule } from './evento/evento-routing.module';
     ActividadModule,
     EscenarioModule,
     MultimediaModule,
-    EventoRoutingModule
-
+    EventoRoutingModule,
+    ActividadRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

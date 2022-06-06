@@ -18,5 +18,7 @@ getEventos(): Observable<EventoDetail[]>{
   console.log("url",this.apiUrl);
   return this.http.get<EventoDetail[]>(this.apiUrl);
 }
-
+getEvento(id: string): Observable<EventoDetail> {
+  return this.http.get<EventoDetail>(this.apiUrl + "/" + id);
+}
 }

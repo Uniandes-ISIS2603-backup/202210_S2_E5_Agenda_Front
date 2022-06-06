@@ -14,8 +14,14 @@
         <dt class="bold">Description</dt>
         <dd>{{ actividadDetail.descripcion}}</dd>
         <dt class="bold">Evento</dt>
-        <dd>{{ actividadDetail.evento.nombre}}</dd>
         <hr />
+        <ul>
+          <li
+            routerLink="/eventos/{{ actividadDetail.evento.id }}"
+          >
+            {{ actividadDetail.evento.nombre }}
+          </li>
+        </ul>
       </dl>
     </div>
   </div>
