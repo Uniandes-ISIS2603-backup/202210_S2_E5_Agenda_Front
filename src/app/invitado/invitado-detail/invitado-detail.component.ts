@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Invitado } from '../invitado';
+import { InvitadoService } from '../invitado.service';
 
 @Component({
   selector: 'app-invitado-detail',
@@ -8,16 +10,30 @@ import { Invitado } from '../invitado';
 })
 export class InvitadoDetailComponent implements OnInit {
 
+  invitadoId!: string;
   @Input() invitadoDetail!: Invitado;
   selectedInvitado!: Invitado;
   selected = false;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+    private invitadoService: InvitadoService) { }
 
-  ngOnInit() {
-  }
+
   onSelected(invitado: Invitado) {
     this.selected = true;
     this.selectedInvitado = invitado;
+  }
+  getInvitado(){
+    this.invitadoService.getInvitado(this.invitadoId).subscribe(invitado=>{
+      this.invitadoDetail = invitado;
+    })
+  }
+  ngOnInit() {
+    if(this.invitadoDetail === undefined){
+      this.invitadoId = this.route.snapshot.paramMap.get('id')!
+      if (this.invitadoId) {
+        this.getInvitado();
+      }
+    }
   }
 }

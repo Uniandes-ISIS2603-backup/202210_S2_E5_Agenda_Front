@@ -53,6 +53,11 @@ export class EventoListComponent implements OnInit {
     return filtro;
   }
 
+  filtrarporfechamascercana():Array<Evento>{
+    return this.eventos.sort(((a, b) => a.fechaDeInicio - b.fechaDeInicio));
+  }
+
+
   //Filtrado eventos por patrocinador
   buscarPorPatrocinador(nombrePatrocinador:String): Array<Evento>
   {

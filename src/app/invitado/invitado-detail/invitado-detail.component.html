@@ -1,3 +1,27 @@
-<p>
-  organizador-detail works!
-</p>
+<div class="panel-body">
+  <div class="border margin p-3">
+    <p class="h3 p-2 invitado-name">{{ invitadoDetail?.nombre}}</p>
+    <p></p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumb">
+          <img
+            class="img-fluid img-thumbnail border border-danger"
+            src="{{ invitadoDetail?.fotografia }}"
+            alt="{{ invitadoDetail?.nombre }}"
+          />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <dl>
+          <dt class="text-title">Bio</dt>
+          <dd class="text">{{ invitadoDetail?.biografia }}</dd>
+        </dl>
+        <p class="h3">Eventos by this invitado:</p>
+        <dd class="caption" *ngFor="let evento of invitadoDetail.eventos">
+          <a routerLink="/eventos/{{ evento.id }}">{{ evento.nombre }}</a>
+        </dd>
+      </div>
+    </div>
+  </div>
+</div>

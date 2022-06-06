@@ -1,3 +1,5 @@
+import { Evento } from "../evento/evento";
+
 export class Invitado{
 
   id: number;
@@ -5,7 +7,7 @@ export class Invitado{
   fotografia: string;
   biografia: string;
 
-  constructor(id: number, nombre: string, fotografia: string, biografia: string) {
+  constructor(id: number, nombre: string, fotografia: string, biografia: string,) {
     this.id = id;
     this.nombre = nombre;
     this.fotografia = fotografia;
