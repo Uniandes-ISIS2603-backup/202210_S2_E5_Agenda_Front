@@ -27,13 +27,9 @@
         <dt>Fecha de Fin</dt>
         <dd>{{ eventoDetail.fechaDeFin }}</dd>
         <hr />
-        <dt>Patrocinadores</dt>
-        <dd class="caption" *ngFor="let patrocinador of eventoDetail.patrocinadores">
-          <a routerLink="/patrocinadores/{{ patrocinador.id }}"> {{patrocinador.nombre}}</a>
-        </dd>
         <dt>Organizadores</dt>
         <dd class="caption" *ngFor="let organizador of eventoDetail.organizadores">
-          <a routerLink="/patrocinadores/{{ organizador.id }}"> {{organizador.nombre}}</a>
+          <a routerLink="/organizadores{{ organizador.id }}"> {{organizador.nombre}}</a>
         </dd>
         <dt class="bold">Escenario</dt>
         <dd class="caption">{{ eventoDetail.escenario.nombre }}</dd>

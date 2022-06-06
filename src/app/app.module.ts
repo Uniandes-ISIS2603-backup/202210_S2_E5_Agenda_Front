@@ -14,6 +14,8 @@ import { EscenarioModule } from './escenario/escenario.module';
 import { MultimediaModule } from './multimedia/multimedia.module';
 import { EventoRoutingModule } from './evento/evento-routing.module';
 import { ActividadRoutingModule } from './actividad/actividad-routing.module';
+import { OrganizadorRoutingModule } from './organizador/organizador-routing.module';
+import { RouterTestingModule } from '@angular/router/testing';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ActividadRoutingModule } from './actividad/actividad-routing.module';
     EscenarioModule,
     MultimediaModule,
     EventoRoutingModule,
-    ActividadRoutingModule
+    ActividadRoutingModule,
+    OrganizadorRoutingModule,
+    RouterTestingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

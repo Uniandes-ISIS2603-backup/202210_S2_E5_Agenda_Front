@@ -27,7 +27,7 @@ export class OrganizadorDetailComponent implements OnInit {
     })
   }
 
-  ngOnInit() {
+   ngOnInit() {
     if(this.organizadorDetail === undefined){
       this.organizadorId = this.route.snapshot.paramMap.get('id')!
       if (this.organizadorId) {

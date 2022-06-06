@@ -18,4 +18,7 @@ export class OrganizadorService {
     return this.http.get<Organizador[]>('http://localhost:8080/api/organizadores');
   }
 
+  getOrganizador(id: string): Observable<OrganizadorDetail>{
+    return this.http.get<OrganizadorDetail>('http://localhost:8080/api/organizadores/' + id);
+  }
 }
