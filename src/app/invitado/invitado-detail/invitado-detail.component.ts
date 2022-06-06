@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Invitado } from '../invitado';
 import { InvitadoService } from '../invitado.service';
+import { InvitadoDetail } from '../invitado-detail';
 
 @Component({
   selector: 'app-invitado-detail',
@@ -11,18 +11,15 @@ import { InvitadoService } from '../invitado.service';
 export class InvitadoDetailComponent implements OnInit {
 
   invitadoId!: string;
-  @Input() invitadoDetail!: Invitado;
-  selectedInvitado!: Invitado;
-  selected = false;
-
-  constructor(private route: ActivatedRoute,
-    private invitadoService: InvitadoService) { }
+  @Input() invitadoDetail!: InvitadoDetail;
 
 
-  onSelected(invitado: Invitado) {
-    this.selected = true;
-    this.selectedInvitado = invitado;
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private invitadoService: InvitadoService
+  ) {}
+
+
   getInvitado(){
     this.invitadoService.getInvitado(this.invitadoId).subscribe(invitado=>{
       this.invitadoDetail = invitado;

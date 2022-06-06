@@ -18,9 +18,14 @@
           <dd class="text">{{ invitadoDetail?.biografia }}</dd>
         </dl>
         <p class="h3">Eventos by this invitado:</p>
-        <dd class="caption" *ngFor="let evento of invitadoDetail.eventos">
-          <a routerLink="/eventos/{{ evento.id }}">{{ evento.nombre }}</a>
-        </dd>
+        <ul>
+          <li
+            *ngFor="let evento of invitadoDetail?.eventos"
+            routerLink="/eventos/{{ evento.id }}"
+          >
+            {{ evento.nombre }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>

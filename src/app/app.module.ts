@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { InvitadoRoutingModule } from './invitado/invitado-routing.module';
 import { EventoModule } from './evento/evento.module';
 import { PatrocinadorModule } from './patrocinador/patrocinador.module';
 import { OrganizadorModule } from './organizador/organizador.module';
@@ -35,7 +35,8 @@ import { RouterTestingModule } from '@angular/router/testing';
     EventoRoutingModule,
     ActividadRoutingModule,
     OrganizadorRoutingModule,
-    RouterTestingModule
+    RouterTestingModule,
+    InvitadoRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

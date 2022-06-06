@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Evento } from 'src/app/evento/evento';
 import { Invitado } from '../invitado';
+import { InvitadoDetail } from '../invitado-detail';
 import { InvitadoService } from '../invitado.service';
 
 @Component({
@@ -20,7 +21,10 @@ export class InvitadoListComponent implements OnInit {
       this.invitados = invitados;
     });
   }
-
+  onSelected(invitado: InvitadoDetail):void{
+    this.selected = true;
+    this.selectedInvitado = invitado;
+  }
   ngOnInit() {
     this.getInvitados();
   }
