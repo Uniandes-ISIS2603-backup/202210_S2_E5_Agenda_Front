@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,RouterModule,InvitadoRoutingModule
   ],
-  exports: [InvitadoListComponent, InvitadoDetailComponent],
+  exports: [InvitadoListComponent],
   declarations: [InvitadoListComponent, InvitadoDetailComponent]
 })
 export class InvitadoModule { }

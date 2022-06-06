@@ -16,6 +16,7 @@ import { EventoRoutingModule } from './evento/evento-routing.module';
 import { ActividadRoutingModule } from './actividad/actividad-routing.module';
 import { OrganizadorRoutingModule } from './organizador/organizador-routing.module';
 import { RouterTestingModule } from '@angular/router/testing';
+import { InvitadoModule } from './invitado/invitado.module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { RouterTestingModule } from '@angular/router/testing';
     EventoRoutingModule,
     ActividadRoutingModule,
     OrganizadorRoutingModule,
+    InvitadoModule,
     RouterTestingModule,
     InvitadoRoutingModule
   ],

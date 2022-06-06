@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Evento } from 'src/app/evento/evento';
 import { Invitado } from '../invitado';
 import { InvitadoDetail } from '../invitado-detail';
 import { InvitadoService } from '../invitado.service';
@@ -10,9 +9,8 @@ import { InvitadoService } from '../invitado.service';
   styleUrls: ['./invitado-list.component.css']
 })
 export class InvitadoListComponent implements OnInit {
-  invitados: Array<Invitado> = [];
-  eventos: Array<Evento> = [];
-  selectedInvitado!: Invitado;
+  invitados: Array<InvitadoDetail> = [];
+  selectedInvitado!: InvitadoDetail;
   selected: Boolean = false;
 
   constructor(private invitadoService: InvitadoService) { }
